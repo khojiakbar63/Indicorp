@@ -1,0 +1,64 @@
+                           // TEXT EXTENDS
+// FOR PARAGRAPH / P
+%p{
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 20px;
+   letter-spacing: 0.2px;
+   color: $my_gray_color-73;
+   text-align: center;
+}
+
+// INTRO TITLE / H1
+%itro_title{
+   font-weight: 800;
+   font-size: 58px;
+   line-height: 80px;
+   letter-spacing: 0.2px;
+   color: $my_dark_blue-42;
+}
+
+// FOR SECTION TITLES / H2
+%section_title {
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 57px;
+   letter-spacing: 0.2px;
+   color: $my_dark_blue-42;
+   text-align: center;
+}
+
+// H3
+%h3 {
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 32px;
+   letter-spacing: 0.1px;
+   color: $my_dark_blue-42;
+}
+
+// H4
+%h4 {
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 30px;
+   letter-spacing: 0.2px;
+   color: $my_gray_color-73;
+}
+
+// H5
+%h5 {
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 24px;
+   letter-spacing: 0.1px;
+   color: $my_dark_blue-42;
+}
+// H6
+%h6 {
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 24px;
+   letter-spacing: 0.2px;
+   color: $my_gray_color-73;
+}

@@ -1,0 +1,95 @@
+#subscribe {
+   background-color: $bg-white-FA;
+
+   .wrapper {
+      padding: 58px 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &:hover img:nth-child(odd){
+         animation: shakeOddIcons 2s infinite .2s;
+      }
+      &:hover img:nth-child(even){
+         animation: shakeEvenIcons 2s infinite ;
+      }
+   }
+
+@keyframes shakeOddIcons{
+   0%{
+      transform: translateY(0px);
+   }
+   25%{
+      transform: translateY(-80px);
+   }
+   50%{
+      transform: rotate(360deg);
+   }
+}
+@keyframes shakeEvenIcons{
+   to{
+      transform: translateX(400px);
+   }
+}
+
+
+
+   .newsletter__card {
+      background-color: $bg_bluish_green_7A;
+      height: 124px;
+      width: 988px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30px 50px;
+      position: relative;
+      margin: 0 auto -60px;
+      border-radius: 2px;
+      position: relative;
+      transition: .1s;
+      label{
+         @extend %h3;
+         color: #fff;
+         width: 258px;
+      }
+      input{
+         height: 58px;
+         border-radius: 5px;
+         border: 1px solid #E6E6E6;
+         border-radius: 5px 0 0 5px;
+         width: 333px;
+         padding: 15px 0 15px 20px;
+         font-weight: 400;
+         font-size: 14px;
+         line-height: 28px;
+         letter-spacing: 0.2px;
+         color: $my_gray_color-73;
+         &:hover{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+         }
+      }
+      button{
+         width: 117px;
+         height: 58px;
+         margin-left: -10px;
+         font-weight: 400;
+         font-size: 14px;
+         line-height: 28px;
+         letter-spacing: 0.2px;
+         color: #fff;
+         background-color: $my_orange_color_2B;
+         border: 1px solid #E6E6E6;
+         border-radius: 0 5px 5px 0;
+         transition: .2s;
+         &:hover{
+            background-color: #e9a445;
+            font-weight: 500;
+         }
+      }
+   }
+   .subscribe__footer {
+      height: 77px;
+      padding: 0 -25px -58px;
+      background-color: $my_dark_blue-42;
+
+   }
+}

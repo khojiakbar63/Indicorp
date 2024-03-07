@@ -1,0 +1,85 @@
+// INTRO 
+#intro{
+   padding-top: 184px;
+   height: 100vh;
+   width: 100vw;
+   background-image: url('/assets/images/indicorp_intro.jpeg');
+   background-repeat: no-repeat;
+   background-position: right top;
+   background-size: contain;
+
+   .intro__title {
+      @extend %itro_title;
+      max-width: 509px;
+      margin-bottom: 35px;
+   }
+   .intro__desc{
+      @extend %h4;
+      max-width: 376px;
+      margin-bottom: 35px;
+   }
+   .btn__actions {
+      display: flex;
+      align-items: center;
+      margin-bottom: 80px;
+      gap: 10px;
+      &__learn{
+         @include introButton(1px solid $my_orange_color_2B, $my_orange_color_2B, #fff);
+         transition: .2s;
+         &:hover{
+            @include introButton(1px solid $my_orange_color_2B, transparent, $my_orange_color_2B);
+         }
+      }
+      &__get{
+         @include introButton(1px solid $my_ocean_color_C1, transparent, $my_ocean_color_C1);
+         transition: .2s;
+         &:hover {
+            @include introButton(1px solid $my_ocean_color_C1, $my_ocean_color_C1, #fff);
+         }
+      }
+   }
+
+   .cards{
+      display: grid;
+      grid-gap: 31px;
+      grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
+      margin-bottom: -18px;
+      &__card{
+         @include universalCard(328px, auto, 35px 40px);
+         background-color: #fff;
+         display: flex;
+         flex-direction: column;
+         align-items: start;
+         transition: .2s;
+         &:hover{
+            transform: scale(1.2);
+            box-shadow: 0px 10px 1px rgba(221, 221, 221, 1), 0 10px 20px rgba(204, 204, 204, 1);  
+            background-color: $my_ocean_color_C1;
+            &:hover h3, p{
+               color: #fff;
+            }
+         }
+         img{
+            width: 48px;
+         }
+         h3{
+            @extend %h3;
+            margin: 10px 0;
+         }
+         p{
+            @extend %p;
+         }
+         &:nth-child(3){
+            background-color: $my_ocean_color_C1;
+            h3, p{
+               color: #fff;
+            }
+         }
+      }
+   }
+   .intro__footer {
+      height: 170px;
+      background-color: $bg_white_FA;
+
+   }
+}

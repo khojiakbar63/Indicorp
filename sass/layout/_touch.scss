@@ -1,0 +1,73 @@
+#touch {
+   background-color: #F3F3F3;
+   padding: 80px 0 178px;
+   h2{
+      @extend %section_title;
+   }
+   p{
+      @extend %p;
+      width: 470px;
+      margin: 10px auto 110px;
+   }
+   .cards {
+      display: flex;
+      justify-content: space-between;
+      &__card{
+         @include universalCard(328px, 333px, auto);
+         background-color: #fff;
+
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         transition: .2s;
+         &:hover{
+            background-color: $my_dark_blue-42;
+            transform: scale(1.2);
+            p{
+               color: #fff;
+            }
+            h5{
+               color: #fff;
+            }
+            button{
+               color: #fff;
+               border: 1px solid #fff;
+            }
+         }
+         img{
+            width: 72px;
+            height: 72px;
+            margin-bottom: 15px;
+
+         }
+         p{
+            margin: 0;
+            @extend %h6;
+         }
+         h5{
+            @extend %h5;
+            margin: 15px 0;
+         }
+         button{
+            @include introButton(1px solid $my_orange_color_2B, transparent, $my_orange_color_2B);
+            border-radius: 5px;
+            padding: 10px 20px;
+         }
+         &:nth-child(2){
+            // background-color: $my_dark_blue-42;
+            // transform: scale(1.2);
+            // p{
+            //    color: #fff;
+            // }
+            // h5{
+            //    color: #fff;
+            // }
+            // button{
+            //    color: #fff;
+            //    border: 1px solid #fff;
+            // }
+         }
+      }
+   }
+}

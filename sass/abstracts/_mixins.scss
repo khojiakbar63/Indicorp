@@ -1,0 +1,27 @@
+// BUTTON
+@mixin introButton($b, $bc, $c){
+   padding: 10px 36px;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 28px;
+   letter-spacing: .2px;
+   border-radius: 37px;
+
+   // variables
+   border: $b;
+   background-color: $bc;
+   color: $c;
+}
+
+// CARD
+@mixin universalCard($w, $h, $p){
+   background-color: #c54949;
+   box-shadow: 0 5px 12px 0 #00000049;
+   
+   width: $w;
+   height: $h;
+   padding: $p;
+}
+ 
+
+
