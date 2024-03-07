@@ -44,7 +44,7 @@ header {
          width: 24px;
          height: 13.71px;
          transition: .2s;
-         &:hover{
+         &:active{
             transform: rotate(-90deg);
          }
       }

@@ -1,0 +1,28 @@
+.js__menu {
+   position: fixed;
+   right: 80px;
+   top: -150px;
+   margin-top: 200px;
+   background-color: #aa7dca;
+   width: 200px;
+   height: 100px;
+   border-radius: 10px;
+   font-weight: 500;
+   font-size: 20px;
+   padding: 10px;
+   z-index: 9999999999;
+   display: none;
+   .list {
+      list-style-type: none;
+      li{
+         a{
+            color: #fff;
+            text-decoration: none;
+         }
+      }
+   }
+}
+
+.menu__show{
+   display: block;
+}
